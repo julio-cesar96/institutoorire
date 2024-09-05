@@ -76,7 +76,7 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    hero {
+    .hero {
         margin-top: 16px;
     }
     .hero h1 {
