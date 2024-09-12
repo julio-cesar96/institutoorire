@@ -18,33 +18,6 @@ body {
     padding: 0 20px;
 }
 
-.hero {
-    margin-bottom: 20px;
-    margin-top: 250px;
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 4px solid;
-    animation: typing 3s steps(22) 1s forwards, blink 0.5s step-end infinite alternate;
-    display: inline-block;
-    width: 0;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-top: 10px;
-    opacity: 0;
-    transition: opacity 1s ease-in; 
-}
-
-.hidden {
-    visibility: hidden;
-}
-
 .image-container {
     display: flex;
     justify-content: center;
@@ -52,42 +25,17 @@ body {
 }
 
 .image-container img {
+    margin-top: 800px;
     max-width: 100%;
-    height: auto;
     width: 1366px;
-    height: 768px;
+    height: 1494px;
 }
 
-/* Animações */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 18ch; }
-}
-
-@keyframes blink {
-    from { border-color: transparent; }
-    to { border-color: black; }
-}
-
-@keyframes typing-delayed {
-    from { width: 0; }
-    to { width: 100%; } /* Ajuste o valor de acordo com o comprimento do texto */
-}
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .hero {
-        margin-top: 16px;
-    }
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
     .image-container img {
+        margin: 0 auto;
         width: 100%;
         height: auto;
     }
